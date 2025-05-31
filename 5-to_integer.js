@@ -1,5 +1,5 @@
 let arg = process.argv.slice(2);
-int = number(arg[0]);
+let int = number(arg[0]);
 if (isNaN(int)) {
   console.log("Not a number");
 }
