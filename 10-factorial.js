@@ -1,16 +1,16 @@
-let arg = process.argv.slice(2);
-arg = parseInt(arg[0]);
+
+const arg = parseInt(process.argv[2]);
+
 if (isNaN(arg)) {
   console.log(1);
-}
-else{
-    console.log(factorial(arg));
+} else {
+  console.log(factorial(arg));
 }
 
-function factorial(n){
-    let result= 1;
-    for (let i = n; i != 0; i--){
-        result*=i;
-    } 
-    return result;
+function factorial(n) {
+  let result = 1;
+  for (let i = n; i > 1; i--) {
+    result *= i;
+  }
+  return result;
 }
