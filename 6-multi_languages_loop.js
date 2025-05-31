@@ -1,7 +1,8 @@
 let languages = ["C is fun", "Python is cool", "JavaScript is amazing"];
+let i = 0;
 
-for(let i = 0; 1<3; 1++){
+while( i<3 ){
     
-        console.log(languages[i]);
-
+    console.log(languages[i]);
+    i++
 }
