@@ -1,19 +1,16 @@
-
-
-const arg = process.argv[2];
-
-function factorialBigInt(n) {
-  let result = 1n;
-  for (let i = BigInt(n); i > 1n; i--) {
-    result *= i;
-  }
-  return result;
+let arg = process.argv.slice(2);
+arg = parseInt(arg[0]);
+if (isNaN(arg)) {
+  console.log(1);
+}
+else{
+    console.log(factorial(arg));
 }
 
-if (!arg || isNaN(parseInt(arg))) {
-  console.log("Missing size");
-} else {
-  const n = parseInt(arg);
-  const fact = factorialBigInt(n);
-  console.log(fact.toString());
+function factorial(n){
+    let result= 1;
+    for (let i = n; i != 0; i--){
+        result*=i;
+    } 
+    return result;
 }
