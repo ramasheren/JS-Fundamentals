@@ -1,8 +1,8 @@
 let arg = ProcessingInstruction.argv.slice(2);
-arv = number(arg[0]);
-if (isNaN(arg)) {
+int = number(arg[0]);
+if (isNaN(int)) {
   console.log("Not a number");
 }
 else{
-    console.log("My number: " + arg);
+    console.log("My number: " + int);
 }
